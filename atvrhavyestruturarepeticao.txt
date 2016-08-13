@@ -1,0 +1,66 @@
+#P4.26
+
+Na estrutura de repetição é realizada uma seguência de comandos até que certa condição seja satisfeita.
+
+#P4.27
+
+Um contador é uma variável do tipo inteiro que deve receber inicialmente (antes do laço) o valor 1 e dentro do laço (no final dele)
+deve ser acrescentado em 1, ou seja, adicionar o valor 1 ao conteúdo da própria variável. Nós só o usamos quando o número de repetições
+for previamente conhecida.
+
+#P4.28
+
+Quando não conhecemos o número de repetições e este for determinado por um valor que será lido (que chamamos de
+flag), devemos utilizar um controle de repetições por entrada, também conhecido como controle por sentinela.
+
+#P4.29
+
+1 Loop) N = 1   L = -1   N != 6 = Verdadeiro   Saida = Não
+2 Loop) N = 2   L = 1    N != 6 = Verdadeiro   Saida = Sim (2)
+3 Loop) N = 3   L = -1   N != 6 = Verdadeiro   Saida = Não
+4 Loop) N = 4   L = 1    N != 6 = Verdadeiro   Saida = Sim (4)
+5 Loop) N = 5   L = -1   N != 6 = Verdadeiro   Saoda = Não
+6 Loop) N = 6   L = 1    N != 6 = Falso        Saida = Sim (6)
+
+#P4.30
+
+numero = 1
+while (numero <=50):
+    print(numero)
+    numero = numero + 1
+
+#P4.31
+
+numero = 1
+while (numero <=100):
+    numero =  numero + 1
+    if (numero%2 == 0):
+        print(numero)
+
+#P4.32
+
+numero = 10
+print(numero)
+while(numero < 1000 and numero > 1):
+    numero = numero + 10
+    print(numero)
+
+#P4.33
+
+numero = 100
+print(numero)
+while(numero <=100 and numero > 1):
+    numero = numero - 1
+    print(numero)
+
+#P4.34
+
+numeroFinal = eval(input(" Digite o numero: "))
+numeroInicial = 1
+while(numeroInicial <= numeroFinal):
+    print(numeroInicial)
+    soma =  soma + numeroInicial
+    numeroInicial = numeroInicial + 1
+
+print(soma)
+
