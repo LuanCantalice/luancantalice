@@ -1,25 +1,25 @@
 #P4.26
 
-Na estrutura de repetição é realizada uma seguência de comandos até que certa condição seja satisfeita.
+Na estrutura de repetiÃ§Ã£o Ã© realizada uma seguÃªncia de comandos atÃ© que certa condiÃ§Ã£o seja satisfeita.
 
 #P4.27
 
-Um contador é uma variável do tipo inteiro que deve receber inicialmente (antes do laço) o valor 1 e dentro do laço (no final dele)
-deve ser acrescentado em 1, ou seja, adicionar o valor 1 ao conteúdo da própria variável. Nós só o usamos quando o número de repetições
+Um contador Ã© uma variÃ¡vel do tipo inteiro que deve receber inicialmente (antes do laÃ§o) o valor 1 e dentro do laÃ§o (no final dele)
+deve ser acrescentado em 1, ou seja, adicionar o valor 1 ao conteÃºdo da prÃ³pria variÃ¡vel. NÃ³s sÃ³ o usamos quando o nÃºmero de repetiÃ§Ãµes
 for previamente conhecida.
 
 #P4.28
 
-Quando não conhecemos o número de repetições e este for determinado por um valor que será lido (que chamamos de
-flag), devemos utilizar um controle de repetições por entrada, também conhecido como controle por sentinela.
+Quando nÃ£o conhecemos o nÃºmero de repetiÃ§Ãµes e este for determinado por um valor que serÃ¡ lido (que chamamos de
+flag), devemos utilizar um controle de repetiÃ§Ãµes por entrada, tambÃ©m conhecido como controle por sentinela.
 
 #P4.29
 
-1 Loop) N = 1   L = -1   N != 6 = Verdadeiro   Saida = Não
+1 Loop) N = 1   L = -1   N != 6 = Verdadeiro   Saida = NÃ£o
 2 Loop) N = 2   L = 1    N != 6 = Verdadeiro   Saida = Sim (2)
-3 Loop) N = 3   L = -1   N != 6 = Verdadeiro   Saida = Não
+3 Loop) N = 3   L = -1   N != 6 = Verdadeiro   Saida = NÃ£o
 4 Loop) N = 4   L = 1    N != 6 = Verdadeiro   Saida = Sim (4)
-5 Loop) N = 5   L = -1   N != 6 = Verdadeiro   Saoda = Não
+5 Loop) N = 5   L = -1   N != 6 = Verdadeiro   Saoda = NÃ£o
 6 Loop) N = 6   L = 1    N != 6 = Falso        Saida = Sim (6)
 
 #P4.30
@@ -40,27 +40,26 @@ while (numero <=100):
 #P4.32
 
 numero = 10
-print(numero)
-while(numero < 1000 and numero > 1):
-    numero = numero + 10
+while(numero <= 1000 and numero > 0):
     print(numero)
+    numero = numero + 10
 
 #P4.33
 
 numero = 100
-print(numero)
-while(numero <=100 and numero > 1):
-    numero = numero - 1
+while(numero <=100 and numero > 0):
     print(numero)
+    numero = numero - 1
 
 #P4.34
 
 numeroFinal = eval(input(" Digite o numero: "))
 numeroInicial = 1
+soma = 0
 while(numeroInicial <= numeroFinal):
     print(numeroInicial)
     soma =  soma + numeroInicial
     numeroInicial = numeroInicial + 1
 
-print(soma)
+print(" A soma dos nÃºmeros inteiros de 1 atÃ©", numeroFinal, "Ã©:", soma)
 
